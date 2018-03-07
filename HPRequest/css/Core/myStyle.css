@@ -1,0 +1,512 @@
+﻿body {
+    width: 100%;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #34db56;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-image {
+    background-color: #f9f9f9;
+    background-position: 0 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.bg-image-cover {
+    height: 300px;
+}
+
+@media screen and (min-width: 992px) {
+    .bg-image-cover {
+        height: 750px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bg-image-parallax {
+        background-attachment: fixed;
+    }
+}
+
+#loader-container {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+    /* style glyph */
+    .inner-addon .glyphicon {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+
+/* align glyph */
+.left-addon .glyphicon {
+    left: 0px;
+}
+
+.right-addon .glyphicon {
+    right: 0px;
+}
+
+/* add padding  */
+.left-addon input {
+    padding-left: 30px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}
+
+#not-found {
+    display: none;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.header-navbar-fixed #main-container {
+    padding: 0 !important;
+    height: 90vh;
+}
+
+#main-Header {
+    height: 7vh;
+}
+
+.hr {
+    height: 3vh;
+    margin-bottom: 0 !important;
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 768px), screen and (orientation: portrait) { /*Mobile*/
+    .nav-header, .nav-header span, .nav-main, .nav-main a {
+        font-size: x-large !important;
+        text-align: center !important;
+    }
+
+        .nav-header li {
+            width: 100%;
+        }
+
+        .nav-header > li > .btn-group > a, .nav-header > li > a {
+            padding: 0;
+        }
+
+        .nav-main li.open > ul > li, .nav-main li.open > ul {
+            opacity: 1;
+            padding: 0;
+            -webkit-margin-before: 0px;
+            -webkit-margin-after: 0px;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 0px;
+        }
+}
+
+
+
+#divLogin > div {
+    margin-top: 20px;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9));
+}
+
+.divLoginContainer {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../../img/Simple-plain-samsung-galaxy-hd-wallpaper.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 540px), screen and (orientation: portrait) { /*mobile*/
+    .sweet-alert {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0 !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #divLogin > div {
+        margin-top: 0;
+    }
+
+    .divLoginContainer {
+        background: white;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .block-content {
+        padding: 0;
+    }
+
+    .nav > li > a {
+        padding: 0 0;
+    }
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+#side-overlay, #sidebar {
+    z-index: 1000;
+}
+
+.dataTable tbody tr:hover {
+    color: #000 !important;
+    background-color: rgba(128, 128, 128, 0.40) !important;
+    transition: background 0.3s linear !important;
+    cursor: default;
+}
+
+.dataTable tbody tr {
+    transition: background 0.2s linear !important;
+}
+
+.menu-selected > a {
+    color: white !important;
+}
+
+.datepicker.dropdown-menu {
+    background-color: white;
+}
+
+.datepicker-days caption, th {
+    text-align: center;
+}
+
+.datepicker-days tbody tr:hover {
+    background-color: white !important;
+}
+
+.datepicker-days tbody tr td:hover {
+    color: #000 !important;
+    background-color: rgba(128, 128, 128, 0.40) !important;
+    transition: background 0.3s linear !important;
+    cursor: pointer;
+}
+
+.datepicker table tr td span.active.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled.active:hover, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.disabled:hover:focus, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active:active, .datepicker table tr td span.active:focus, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.active:hover, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active:hover:focus, .datepicker table tr td span.active:hover, .datepicker table tr td.active.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled.active:hover, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover, .datepicker table tr td.active.active:hover, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td span.active, .open .dropdown-toggle.datepicker table tr td span.active.disabled, .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover, .open .dropdown-toggle.datepicker table tr td span.active:hover, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover, .open .dropdown-toggle.datepicker table tr td.active:hover {
+    background-color: #003865 !important;
+    border-color: #003865 !important;
+    color: black !important;
+}
+
+.nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+}
+
+table span, h2, .h2, a.inactive, .dataTables_info {
+    cursor: default;
+}
+
+.block > .nav-tabs.nav-tabs-alt > li > a:hover {
+    -webkit-box-shadow: 0 0 white;
+    box-shadow: 0 0 white;
+}
+
+.colorpicker-element .btn-default i {
+    display: inline-block;
+    cursor: default;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+
+.colorpicker-element .btn-default {
+    pointer-events: none;
+    cursor: default;
+}
+
+div.dataTables_scrollHead table.table-bordered, table.table-bordered.dataTable tbody td, table.table-bordered.dataTable tbody th {
+    vertical-align: middle;
+    color: black !important;
+}
+
+#tblEvents.dataTable tbody tr:hover, #tblAnswers.dataTable tbody tr:hover, #tblNonConformanceDetail.dataTable tbody tr:hover {
+    cursor: auto;
+}
+
+.modal-centered {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-control[disabled] {
+    background-color: rgb(238,238,238) !important;
+}
+
+
+
+.block-content {
+    padding: 10px;
+}
+
+@media screen and (orientation:portrait) { /*mobile portait*/
+    .hidden-md, .hidden-lg, .hidden-sm {
+        display: block !important;
+    }
+
+    #page-container.sidebar-l.sidebar-o {
+        padding-left: 0;
+    }
+
+    #side-overlay, #sidebar {
+        position: fixed;
+        z-index: 1032;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: all .28s ease-out;
+        transition: all .28s ease-out;
+    }
+
+    .sidebar-l #sidebar {
+        left: 0;
+        -webkit-transform: translateX(-100%) translateY(0) translateZ(0);
+        -ms-transform: translateX(-100%) translateY(0);
+        transform: translateX(-100%) translateY(0) translateZ(0);
+    }
+
+    .sidebar-o-xs #sidebar {
+        opacity: 1;
+        -webkit-transform: translateX(0) translateY(0) translateZ(0);
+        -ms-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0) translateZ(0);
+    }
+
+    #sidebar {
+        width: 100%;
+        opacity: 0;
+    }
+
+    .header-navbar-fixed #main-container {
+        height: 80vh;
+    }
+
+    #main-Header {
+        height: 7vh;
+    }
+
+    .hr {
+        height: 3vh;
+    }
+
+    .hidden-md.hidden-lg.hidden-sm.bg-primary {
+        height: 10vh;
+    }
+
+        .hidden-md.hidden-lg.hidden-sm.bg-primary button {
+            height: 10vh;
+        }
+
+    @media screen and (min-width:1000px) {
+        .nav-header, .nav-header span, .nav-main, .nav-main a, a.si {
+            font-size: -webkit-xxx-large !important;
+            text-align: center !important;
+        }
+
+            .nav-main ul a {
+                padding: 15px 15px 15px 5px;
+                font-size: 13px;
+                color: rgba(255,255,255,.4);
+            }
+
+        .jabil-logo {
+            margin-left: 0;
+        }
+
+        .header-navbar-fixed #main-container {
+            height: 89vh;
+        }
+
+        #main-Header {
+            height: 3vh;
+        }
+
+        .hr {
+            height: 3vh;
+        }
+
+        .hidden-md.hidden-lg.hidden-sm.bg-primary {
+            height: 4vh;
+        }
+
+            .hidden-md.hidden-lg.hidden-sm.bg-primary button {
+                height: 4vh;
+            }
+    }
+}
+
+.dropdown-menu ul li.disabled {
+    display: none;
+}
+
+.tbl-total-remark tbody tr:last-child {
+    font-weight: bolder;
+    background-color: rgba(0, 56, 102, 0.16);
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+}
+
+.dropdown-menu {
+    background-color: white;
+}
+
+    .dropdown-menu > li > a {
+        background-color: ghostwhite;
+        color: black;
+    }
+
+        .dropdown-menu > li > a:hover {
+            background-color: lightskyblue;
+            color: black;
+        }
+
+.block > .nav-tabs > li:nth-child(1) > a {
+    background-color: rgba(21, 21, 21, 0.90) !important;
+    color: white;
+}
+
+.block > .nav-tabs > li:nth-child(2) > a {
+    background-color: rgba(255, 251, 62, 0.50) !important;
+}
+
+.block > .nav-tabs > li:nth-child(3) > a {
+    background-color: rgba(255, 0, 0, 0.25) !important;
+}
+
+.block > .nav-tabs > li:nth-child(4) > a {
+    background-color: rgba(61, 61, 61, 0.25) !important;
+}
+
+.block > .nav-tabs > li:nth-child(5) > a {
+    background-color: rgba(0, 151, 7, 0.25) !important;
+}
+
+.block > .nav-tabs > li:nth-child(6) > a {
+    background-color: rgba(255, 131, 0, 0.25) !important;
+}
+
+.block > .nav-tabs > li:nth-child(7) > a {
+    background-color: rgba(107, 61, 255, 0.25) !important;
+}
+
+.block > .nav-tabs > li:nth-child(8) > a {
+    background-color: rgba(0, 66, 251, 0.25) !important;
+}
+
+td.details-control {
+    background: url('../../img/details_open.png') no-repeat center center;   
+}
+
+tr.shown td.details-control {
+    background: url('../../img/details_close.png') no-repeat center center;
+}
+
+.border-day {
+}
+
+table tbody tr.selected, table tbody tr.selected:hover {
+    background-color: rgba(214, 223, 230, 0.95) !important;
+}
+
+.content{
+    margin: 0 auto;
+    padding: 20px 20px 20px;
+    max-width: 100%;
+    overflow-x: visible;
+}
+tr.shown + tr{
+    background-color:rgba(194, 186, 186, 0.50);
+    font-weight:bolder;
+}
+th { white-space: nowrap; }
+.block-header{
+    padding:0px;
+}
+
+.block#map-container{
+    margin-bottom:0px;
+}
+
+.bg-black-op {
+    margin: 0px;
+    padding: 0px;
+}
+
+.RowMark {
+    
+}
+
+.RowMark :hover {
+    color: #003865;
+    font-weight: bold;
+}

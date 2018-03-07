@@ -1,0 +1,68 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    @Styles.Render("~/Content/CoreCss")
+    @Scripts.Render("~/bundles/CoreJs")
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheets -->
+    <!-- Web fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <title>@ViewBag.Title</title>
+
+    <!--esta seccion es usada para agregar scripts desde content de una vista -->
+    @RenderSection("Head", false)
+
+</head>
+<body>
+
+    <div id="loader-container">
+        <div id="loader"></div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- Page Header -->
+        <div class="content-mini content-mini-full navbar-header-fixed bg-white">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-1 jabil-logo">
+                    <img src="~/img/logo-jabil@2x.png" class="home"/>
+                </div>
+                <div class="col-sm-1 col-sm-offset-6 ">
+                </div>
+            </div>
+        </div>
+        <!-- END Page Header -->
+
+        <!-- Page Image Header -->
+        <div class="bg-image overflow-hidden" style="background-image: url('@ViewBag.UrlImgHeader'); background-size: 100% 100%; max-height: 130px;">
+            <div class="bg-black-op">
+                <div class="content content-narrow">
+                    <div class="block block-transparent">
+                        <div class="block-content block-content-full">
+                            <h1 class="h1 font-w300 text-white animated fadeInDown "> @ViewBag.Title </h1>
+                            <h2 class="h4 font-w300 text-white-op animated fadeInUp"> @ViewBag.SubTitle </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Page Image Header -->
+
+        @RenderBody()
+    </div>
+</body>
+</html>
